@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>My YouTube Page</title>
+        <link rel="stylesheet" href="css/youtube.css"> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <h1>Search<span>Videos</span></h1>
+                <p>Search all YouTube videos</p>
+            </header>
+            <section>
+                <form id="search-form" name="search-form" onsubmit="return search()">
+					<div class="fieldcontainer">
+						<input type="submit" name="search-btn" id="search-btn" value="">
+						<input type="search" id="query" class="search-field" placeholder="Search YouTube...">						
+					</div>
+				</form>
+                
+                <ul id="results"></ul>
+				<div id="buttons"></div>
+            </section>
+            <footer>
+                <p>Copyright &copy; 2019, All Rights Reserved</p>
+            </footer>
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+        <script src="js/youtube.js"></script>
+        <script>
+			$(document).ready(function(){
+				$(".fancybox").fancybox();
+			});
+		</script>
+    </body>
+
+</html>

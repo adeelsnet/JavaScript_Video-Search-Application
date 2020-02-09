@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: :"Segoue", sans-serif;
+    line-height: 1.6em; /* em is relative to the font-size of its direct or nearest parent, rem is only relative to the html (root) font-size. */
+    color:#666; /* Dark Gray */
+    background: #e1e1e1 url(../img/creampaper.png); /*  light gray */
+    font-size: 14px; /* 16 default  lecture 5 */
+}
+
+a {
+    color: #333; /* very dark gray */
+    text-decoration: none;   
+}
+
+#container {
+    width: 740px;
+    background: #fff; /* white */
+    margin: auto; /*  we want it in the middle */
+}
+        
+/*  clear our floats */
+.clearfix {
+    clear: both;
+}
+
+header {
+    padding: 30px 20px;
+    background:  #f4f4f4 /* light gray */
+    
+}
+
+header h1 {
+    color: #000; /* black */
+    margin-bottom: 5px;
+}
+
+/* google youtube website color palette */
+header span {
+    color: #ff0000; /*  YouTube red */
+}
+    
+section  {
+    padding: 30px 20px 20px 20px;  
+    /* 4 values - top, right, bottom, left (clockwise) */
+    /* 3 values - top, right and left, bottom
+    /* 2 values - top and bottom, right and left
+    /* 1 value - all four sides
+    /* negative are not allowed */
+    /*  Margin is the space outside the border of an element, while padding is the space inside the border of it. */
+}
+
+footer {
+    padding: 20px;
+    background: #f4f4f4; /* light gray */
+    text-align: center;
+}
+
+/*  Next Section - Searchbar Styling & Animation */
+#search-form {
+    display:block; /*  pecifies the display behavior (the type of rendering box) of an element.*/
+    /*  Displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width */
+    margin-bottom: 15px;
+}
+
+.fieldcontainer {
+    display: block;
+    position: relative; /*  The element is positioned relative to its normal position starts from where the element would be if it were still in the normal flow. */
+    width: 90%;
+    margin: 0 auto; /* 0 top bottom - auto left to right */
+}
+
+.search-field {
+    box-sizing: border-box; /* property defines how the width and height of an element are calculated */
+    /*  The width and height properties (and min/max properties) includes content, padding and border */
+    display: block;
+    width: 45%;
+    padding: 11px 7px;
+    padding-right: 43px;
+	padding-left: 35px;
+    color:#ccc; /* gray */
+    border: 1px solid #c8c8c8; /* light gray */
+    font-size: 1.6em;
+    border-bottom-color: #d2e2e7; /* sky blue */
+    border-radius: 1px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.1), 0 0 0  6px #f0f0f0;
+	transition: width 0.4s ease-in-out;	
+}
+
+.search-field:focus {
+  width: 100%;
+} 
+
+#search-btn {
+    position:absolute;
+	/*right: 360px;*/
+	top:10px;
+	height:32px;
+	width:32px;
+	border: 0;
+	cursor:pointer;
+    zoom: 1; /* This property controls the magnification level for the current element. */
+    opacity:0.65;
+	background: transparent url(../img/search.png) top left no-repeat;
+}
+
+#search-btn:hover {
+    opacity: 0.9; /*  transparency closer to 1 then the more clear it will be */
+}
+
+/* Save for later */
+#results li {
+    padding: 10px 0;
+    border-bottom: 1px #ccc dotted; /* gray */
+    list-style: none;
+    overflow: auto; /* The overflow property specifies what should happen if content overflows an element's box*/
+    /* If overflow is clipped, a scroll-bar should be added to see the rest of the content */
+}
+
+.list-left { /* image */
+    float: left;
+    width: 20%;
+}
+
+.list-left img {
+    width: 100%;
+    padding: 3px;
+    border: solid #ccc 1px;    
+}
+
+.list-right {
+    float: right;
+    width:78%;
+}
+
+.cTitle {
+    color: #dd2826;
+}
+
+/*  save for when the next / previous buttons are used */
+
+.button-container{
+	margin-top:25px;
+}
+
+.paging-button{
+	background:#f4f4f4;
+	padding:8px 13px;
+	border:#ccc 1px solid;
+	border-radius:5px;
+	color:#333;
+	margin:10px;
+	cursor:hand;
+}
